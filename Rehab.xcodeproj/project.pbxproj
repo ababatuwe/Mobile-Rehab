@@ -8,20 +8,130 @@
 
 /* Begin PBXBuildFile section */
 		405F24041D9EBCF300DE9819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24031D9EBCF300DE9819 /* AppDelegate.swift */; };
-		405F24061D9EBCF300DE9819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24051D9EBCF300DE9819 /* ViewController.swift */; };
 		405F24091D9EBCF300DE9819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405F24071D9EBCF300DE9819 /* Main.storyboard */; };
 		405F240B1D9EBCF400DE9819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405F240A1D9EBCF400DE9819 /* Assets.xcassets */; };
 		405F240E1D9EBCF400DE9819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405F240C1D9EBCF400DE9819 /* LaunchScreen.storyboard */; };
+		405F24321D9EC51600DE9819 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F241C1D9EBD5B00DE9819 /* CareKit.framework */; };
+		405F24331D9EC51600DE9819 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 405F241C1D9EBD5B00DE9819 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		405F24361D9EC51600DE9819 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F24261D9EBD6500DE9819 /* ResearchKit.framework */; };
+		405F24371D9EC51600DE9819 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 405F24261D9EBD6500DE9819 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		405F243C1D9EC55D00DE9819 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F243B1D9EC55D00DE9819 /* RootVC.swift */; };
+		405F243E1D9EC67000DE9819 /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F243D1D9EC67000DE9819 /* CarePlanStoreManager.swift */; };
+		405F24541D9EC69D00DE9819 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F243F1D9EC69D00DE9819 /* Activity.swift */; };
+		405F24551D9EC69D00DE9819 /* AerobicExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24401D9EC69D00DE9819 /* AerobicExercise.swift */; };
+		405F24561D9EC69D00DE9819 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24411D9EC69D00DE9819 /* Assessment.swift */; };
+		405F24571D9EC69D00DE9819 /* BuildInsightsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24421D9EC69D00DE9819 /* BuildInsightsOperation.swift */; };
+		405F24581D9EC69D00DE9819 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24431D9EC69D00DE9819 /* Colors.swift */; };
+		405F24591D9EC69D00DE9819 /* Fitness Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24441D9EC69D00DE9819 /* Fitness Check.swift */; };
+		405F245A1D9EC69D00DE9819 /* HealthSampleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24451D9EC69D00DE9819 /* HealthSampleBuilder.swift */; };
+		405F245B1D9EC69D00DE9819 /* InsightsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24461D9EC69D00DE9819 /* InsightsBuilder.swift */; };
+		405F245C1D9EC69D00DE9819 /* LightExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24471D9EC69D00DE9819 /* LightExercise.swift */; };
+		405F245D1D9EC69D00DE9819 /* LightRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24481D9EC69D00DE9819 /* LightRun.swift */; };
+		405F245E1D9EC69D00DE9819 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24491D9EC69D00DE9819 /* NSCalendar+Dates.swift */; };
+		405F245F1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244A1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift */; };
+		405F24601D9EC69D00DE9819 /* OrientationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244B1D9EC69D00DE9819 /* OrientationTask.swift */; };
+		405F24611D9EC69D00DE9819 /* QuadStretch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244C1D9EC69D00DE9819 /* QuadStretch.swift */; };
+		405F24621D9EC69D00DE9819 /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244D1D9EC69D00DE9819 /* QueryActivityEventsOperation.swift */; };
+		405F24631D9EC69D00DE9819 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244E1D9EC69D00DE9819 /* SampleData.swift */; };
+		405F24641D9EC69D00DE9819 /* SCAT3_V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */; };
+		405F24651D9EC69D00DE9819 /* SCAT3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24501D9EC69D00DE9819 /* SCAT3.swift */; };
+		405F24661D9EC69D00DE9819 /* SpatialMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24511D9EC69D00DE9819 /* SpatialMemory.swift */; };
+		405F24671D9EC69D00DE9819 /* TappingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24521D9EC69D00DE9819 /* TappingTask.swift */; };
+		405F24681D9EC69D00DE9819 /* TowerOfHanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24531D9EC69D00DE9819 /* TowerOfHanoi.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		405F241B1D9EBD5B00DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		405F241D1D9EBD5B00DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		405F24251D9EBD6500DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		405F24271D9EBD6500DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		405F24341D9EC51600DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		405F24381D9EC51600DE9819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		405F243A1D9EC51600DE9819 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				405F24371D9EC51600DE9819 /* ResearchKit.framework in Embed Frameworks */,
+				405F24331D9EC51600DE9819 /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		405F24001D9EBCF300DE9819 /* Rehab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rehab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405F24031D9EBCF300DE9819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		405F24051D9EBCF300DE9819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		405F24081D9EBCF300DE9819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405F240A1D9EBCF400DE9819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405F240D1D9EBCF400DE9819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405F240F1D9EBCF400DE9819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "../../Apple Health/CareKit-master/CareKit.xcodeproj"; sourceTree = "<group>"; };
+		405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Apple Health/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		405F243B1D9EC55D00DE9819 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		405F243D1D9EC67000DE9819 /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
+		405F243F1D9EC69D00DE9819 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		405F24401D9EC69D00DE9819 /* AerobicExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AerobicExercise.swift; sourceTree = "<group>"; };
+		405F24411D9EC69D00DE9819 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		405F24421D9EC69D00DE9819 /* BuildInsightsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildInsightsOperation.swift; sourceTree = "<group>"; };
+		405F24431D9EC69D00DE9819 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		405F24441D9EC69D00DE9819 /* Fitness Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fitness Check.swift"; sourceTree = "<group>"; };
+		405F24451D9EC69D00DE9819 /* HealthSampleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthSampleBuilder.swift; sourceTree = "<group>"; };
+		405F24461D9EC69D00DE9819 /* InsightsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsBuilder.swift; sourceTree = "<group>"; };
+		405F24471D9EC69D00DE9819 /* LightExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightExercise.swift; sourceTree = "<group>"; };
+		405F24481D9EC69D00DE9819 /* LightRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightRun.swift; sourceTree = "<group>"; };
+		405F24491D9EC69D00DE9819 /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
+		405F244A1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
+		405F244B1D9EC69D00DE9819 /* OrientationTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationTask.swift; sourceTree = "<group>"; };
+		405F244C1D9EC69D00DE9819 /* QuadStretch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadStretch.swift; sourceTree = "<group>"; };
+		405F244D1D9EC69D00DE9819 /* QueryActivityEventsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryActivityEventsOperation.swift; sourceTree = "<group>"; };
+		405F244E1D9EC69D00DE9819 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAT3_V2.swift; sourceTree = "<group>"; };
+		405F24501D9EC69D00DE9819 /* SCAT3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAT3.swift; sourceTree = "<group>"; };
+		405F24511D9EC69D00DE9819 /* SpatialMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialMemory.swift; sourceTree = "<group>"; };
+		405F24521D9EC69D00DE9819 /* TappingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TappingTask.swift; sourceTree = "<group>"; };
+		405F24531D9EC69D00DE9819 /* TowerOfHanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerOfHanoi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405F24361D9EC51600DE9819 /* ResearchKit.framework in Frameworks */,
+				405F24321D9EC51600DE9819 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +150,8 @@
 		405F23F71D9EBCF300DE9819 = {
 			isa = PBXGroup;
 			children = (
+				405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */,
+				405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */,
 				405F24021D9EBCF300DE9819 /* Rehab */,
 				405F24011D9EBCF300DE9819 /* Products */,
 			);
@@ -55,13 +169,61 @@
 			isa = PBXGroup;
 			children = (
 				405F24031D9EBCF300DE9819 /* AppDelegate.swift */,
-				405F24051D9EBCF300DE9819 /* ViewController.swift */,
+				405F24691D9EC6F800DE9819 /* Activities + Assessments */,
+				405F24421D9EC69D00DE9819 /* BuildInsightsOperation.swift */,
+				405F24431D9EC69D00DE9819 /* Colors.swift */,
+				405F243D1D9EC67000DE9819 /* CarePlanStoreManager.swift */,
+				405F24451D9EC69D00DE9819 /* HealthSampleBuilder.swift */,
+				405F24461D9EC69D00DE9819 /* InsightsBuilder.swift */,
+				405F24491D9EC69D00DE9819 /* NSCalendar+Dates.swift */,
+				405F244A1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift */,
+				405F244B1D9EC69D00DE9819 /* OrientationTask.swift */,
+				405F244D1D9EC69D00DE9819 /* QueryActivityEventsOperation.swift */,
+				405F243B1D9EC55D00DE9819 /* RootVC.swift */,
+				405F244E1D9EC69D00DE9819 /* SampleData.swift */,
 				405F24071D9EBCF300DE9819 /* Main.storyboard */,
 				405F240A1D9EBCF400DE9819 /* Assets.xcassets */,
 				405F240C1D9EBCF400DE9819 /* LaunchScreen.storyboard */,
 				405F240F1D9EBCF400DE9819 /* Info.plist */,
 			);
 			path = Rehab;
+			sourceTree = "<group>";
+		};
+		405F24161D9EBD5B00DE9819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				405F241C1D9EBD5B00DE9819 /* CareKit.framework */,
+				405F241E1D9EBD5B00DE9819 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		405F24201D9EBD6500DE9819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				405F24261D9EBD6500DE9819 /* ResearchKit.framework */,
+				405F24281D9EBD6500DE9819 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		405F24691D9EC6F800DE9819 /* Activities + Assessments */ = {
+			isa = PBXGroup;
+			children = (
+				405F243F1D9EC69D00DE9819 /* Activity.swift */,
+				405F24401D9EC69D00DE9819 /* AerobicExercise.swift */,
+				405F24411D9EC69D00DE9819 /* Assessment.swift */,
+				405F24441D9EC69D00DE9819 /* Fitness Check.swift */,
+				405F24481D9EC69D00DE9819 /* LightRun.swift */,
+				405F24471D9EC69D00DE9819 /* LightExercise.swift */,
+				405F244C1D9EC69D00DE9819 /* QuadStretch.swift */,
+				405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */,
+				405F24501D9EC69D00DE9819 /* SCAT3.swift */,
+				405F24511D9EC69D00DE9819 /* SpatialMemory.swift */,
+				405F24521D9EC69D00DE9819 /* TappingTask.swift */,
+				405F24531D9EC69D00DE9819 /* TowerOfHanoi.swift */,
+			);
+			name = "Activities + Assessments";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +236,13 @@
 				405F23FC1D9EBCF300DE9819 /* Sources */,
 				405F23FD1D9EBCF300DE9819 /* Frameworks */,
 				405F23FE1D9EBCF300DE9819 /* Resources */,
+				405F243A1D9EC51600DE9819 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				405F24351D9EC51600DE9819 /* PBXTargetDependency */,
+				405F24391D9EC51600DE9819 /* PBXTargetDependency */,
 			);
 			name = Rehab;
 			productName = Rehab;
@@ -112,12 +277,53 @@
 			mainGroup = 405F23F71D9EBCF300DE9819;
 			productRefGroup = 405F24011D9EBCF300DE9819 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 405F24161D9EBD5B00DE9819 /* Products */;
+					ProjectRef = 405F24151D9EBD5B00DE9819 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 405F24201D9EBD6500DE9819 /* Products */;
+					ProjectRef = 405F241F1D9EBD6500DE9819 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				405F23FF1D9EBCF300DE9819 /* Rehab */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		405F241C1D9EBD5B00DE9819 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 405F241B1D9EBD5B00DE9819 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		405F241E1D9EBD5B00DE9819 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 405F241D1D9EBD5B00DE9819 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		405F24261D9EBD6500DE9819 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 405F24251D9EBD6500DE9819 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		405F24281D9EBD6500DE9819 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 405F24271D9EBD6500DE9819 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		405F23FE1D9EBCF300DE9819 /* Resources */ = {
@@ -137,12 +343,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405F24061D9EBCF300DE9819 /* ViewController.swift in Sources */,
+				405F245F1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift in Sources */,
+				405F24591D9EC69D00DE9819 /* Fitness Check.swift in Sources */,
+				405F24571D9EC69D00DE9819 /* BuildInsightsOperation.swift in Sources */,
+				405F24581D9EC69D00DE9819 /* Colors.swift in Sources */,
+				405F243C1D9EC55D00DE9819 /* RootVC.swift in Sources */,
+				405F24611D9EC69D00DE9819 /* QuadStretch.swift in Sources */,
+				405F243E1D9EC67000DE9819 /* CarePlanStoreManager.swift in Sources */,
+				405F24551D9EC69D00DE9819 /* AerobicExercise.swift in Sources */,
+				405F245D1D9EC69D00DE9819 /* LightRun.swift in Sources */,
+				405F24671D9EC69D00DE9819 /* TappingTask.swift in Sources */,
+				405F24681D9EC69D00DE9819 /* TowerOfHanoi.swift in Sources */,
+				405F245C1D9EC69D00DE9819 /* LightExercise.swift in Sources */,
+				405F24621D9EC69D00DE9819 /* QueryActivityEventsOperation.swift in Sources */,
+				405F24631D9EC69D00DE9819 /* SampleData.swift in Sources */,
+				405F24561D9EC69D00DE9819 /* Assessment.swift in Sources */,
+				405F245A1D9EC69D00DE9819 /* HealthSampleBuilder.swift in Sources */,
+				405F245B1D9EC69D00DE9819 /* InsightsBuilder.swift in Sources */,
+				405F24541D9EC69D00DE9819 /* Activity.swift in Sources */,
+				405F24651D9EC69D00DE9819 /* SCAT3.swift in Sources */,
+				405F24661D9EC69D00DE9819 /* SpatialMemory.swift in Sources */,
+				405F245E1D9EC69D00DE9819 /* NSCalendar+Dates.swift in Sources */,
 				405F24041D9EBCF300DE9819 /* AppDelegate.swift in Sources */,
+				405F24641D9EC69D00DE9819 /* SCAT3_V2.swift in Sources */,
+				405F24601D9EC69D00DE9819 /* OrientationTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		405F24351D9EC51600DE9819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 405F24341D9EC51600DE9819 /* PBXContainerItemProxy */;
+		};
+		405F24391D9EC51600DE9819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 405F24381D9EC51600DE9819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		405F24071D9EBCF300DE9819 /* Main.storyboard */ = {
@@ -258,6 +499,7 @@
 		405F24131D9EBCF400DE9819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NGQD6GH3Z6;
 				INFOPLIST_FILE = Rehab/Info.plist;
@@ -271,6 +513,7 @@
 		405F24141D9EBCF400DE9819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NGQD6GH3Z6;
 				INFOPLIST_FILE = Rehab/Info.plist;
@@ -300,6 +543,7 @@
 				405F24141D9EBCF400DE9819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
