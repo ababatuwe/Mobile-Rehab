@@ -33,6 +33,6 @@ struct LightExercise: Assessment {
     func task() -> ORKTask {
         let intendedUseDescription = "Take a walk"
         
-        return ORKOrderedTask.timedWalkTaskWithIdentifier(activityType.rawValue, intendedUseDescription: intendedUseDescription, distanceInMeters: 1500, timeLimit: 1000, includeAssistiveDeviceForm: true, options: .None)
+        return ORKOrderedTask.timedWalk(withIdentifier: activityType.rawValue, intendedUseDescription: intendedUseDescription, distanceInMeters: 1500, timeLimit: 1000, includeAssistiveDeviceForm: true, options: ORKPredefinedTaskOption.excludeDeviceMotion)
     }
 }

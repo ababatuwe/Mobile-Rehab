@@ -34,6 +34,10 @@ struct TappingTask: Assessment {
     func task() -> ORKTask {
         let intendedUseDescription = "Finger Tapping is a universal sign of panic."
         
-        return ORKOrderedTask.twoFingerTappingIntervalTaskWithIdentifier(activityType.rawValue, intendedUseDescription: intendedUseDescription, duration: 5, options: ORKPredefinedTaskOption.None)
+        return ORKOrderedTask.twoFingerTappingIntervalTask(
+            withIdentifier: activityType.rawValue,
+            intendedUseDescription: intendedUseDescription,
+            duration: 5,
+            options: ORKPredefinedTaskOption.excludeLocation)
     }
 }

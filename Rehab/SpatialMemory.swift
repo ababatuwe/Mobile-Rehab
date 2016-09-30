@@ -32,7 +32,8 @@ struct SpatialMemory: Assessment {
     
     func task() -> ORKTask {
         let intendedUseDescription = "Memory Test"
-        return ORKOrderedTask.spatialSpanMemoryTaskWithIdentifier(activityType.rawValue,
+        return ORKOrderedTask.spatialSpanMemoryTask(
+            withIdentifier: activityType.rawValue,
             intendedUseDescription: intendedUseDescription,
             initialSpan: 3,
             minimumSpan: 0,
@@ -43,6 +44,6 @@ struct SpatialMemory: Assessment {
             customTargetImage: nil,
             customTargetPluralName: nil,
             requireReversal: false,
-            options: .None)
+            options: .excludeLocation)
     }
 }

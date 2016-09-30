@@ -30,7 +30,6 @@
 		405F245E1D9EC69D00DE9819 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F24491D9EC69D00DE9819 /* NSCalendar+Dates.swift */; };
 		405F245F1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244A1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift */; };
 		405F24601D9EC69D00DE9819 /* OrientationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244B1D9EC69D00DE9819 /* OrientationTask.swift */; };
-		405F24611D9EC69D00DE9819 /* QuadStretch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244C1D9EC69D00DE9819 /* QuadStretch.swift */; };
 		405F24621D9EC69D00DE9819 /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244D1D9EC69D00DE9819 /* QueryActivityEventsOperation.swift */; };
 		405F24631D9EC69D00DE9819 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244E1D9EC69D00DE9819 /* SampleData.swift */; };
 		405F24641D9EC69D00DE9819 /* SCAT3_V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */; };
@@ -124,7 +123,6 @@
 		405F24491D9EC69D00DE9819 /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
 		405F244A1D9EC69D00DE9819 /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
 		405F244B1D9EC69D00DE9819 /* OrientationTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationTask.swift; sourceTree = "<group>"; };
-		405F244C1D9EC69D00DE9819 /* QuadStretch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadStretch.swift; sourceTree = "<group>"; };
 		405F244D1D9EC69D00DE9819 /* QueryActivityEventsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryActivityEventsOperation.swift; sourceTree = "<group>"; };
 		405F244E1D9EC69D00DE9819 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAT3_V2.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 				405F24441D9EC69D00DE9819 /* Fitness Check.swift */,
 				405F24481D9EC69D00DE9819 /* LightRun.swift */,
 				405F24471D9EC69D00DE9819 /* LightExercise.swift */,
-				405F244C1D9EC69D00DE9819 /* QuadStretch.swift */,
 				405F244F1D9EC69D00DE9819 /* SCAT3_V2.swift */,
 				405F24501D9EC69D00DE9819 /* SCAT3.swift */,
 				405F24511D9EC69D00DE9819 /* SpatialMemory.swift */,
@@ -348,7 +345,6 @@
 				405F24571D9EC69D00DE9819 /* BuildInsightsOperation.swift in Sources */,
 				405F24581D9EC69D00DE9819 /* Colors.swift in Sources */,
 				405F243C1D9EC55D00DE9819 /* RootVC.swift in Sources */,
-				405F24611D9EC69D00DE9819 /* QuadStretch.swift in Sources */,
 				405F243E1D9EC67000DE9819 /* CarePlanStoreManager.swift in Sources */,
 				405F24551D9EC69D00DE9819 /* AerobicExercise.swift in Sources */,
 				405F245D1D9EC69D00DE9819 /* LightRun.swift in Sources */,

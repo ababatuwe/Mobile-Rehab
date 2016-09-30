@@ -44,10 +44,10 @@ struct OrientationTask: Assessment {
             defaultDate: defaultDate!,
             minimumDate: nil,
             maximumDate: nil,
-            calendar: Calendar.currentCalendar())
+            calendar: Calendar.current)
         
         let orientationQuestionStep = ORKQuestionStep(identifier: "\(activityType.rawValue + "-" + questionStepTitle)", title: questionStepTitle, answer: answerFormat)
-        orientationQuestionStep.optional = false
+        orientationQuestionStep.isOptional = false
         
         
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")

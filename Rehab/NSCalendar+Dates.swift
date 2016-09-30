@@ -37,10 +37,10 @@ extension Calendar {
      */
     func weekDatesForDate(_ date: Date) -> (start: Date, end: Date) {
         var interval: TimeInterval = 0
-        var start: Date?
-        range(of: .weekOfYear, start: &start, interval: &interval, for: date)
-        let end = start!.addingTimeInterval(interval)
+        var start: Date = Date()
+        _ = dateInterval(of: .weekOfYear, start: &start, interval: &interval, for: date)
+        let end = start.addingTimeInterval(interval)
         
-        return (start!, end)
+        return (start as Date, end as Date)
     }
 }

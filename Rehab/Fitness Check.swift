@@ -35,11 +35,11 @@ struct FitnessCheck: Assessment {
         
         let intendedUseDescription = "Let's check your fitness"
         
-        return ORKOrderedTask.fitnessCheckTaskWithIdentifier(
-            activityType.rawValue,
+        return ORKOrderedTask.fitnessCheck(
+            withIdentifier: activityType.rawValue,
             intendedUseDescription: intendedUseDescription,
             walkDuration: 10000,
             restDuration: 200,
-            options: .None)
+            options: .excludeAccelerometer)
     }
 }

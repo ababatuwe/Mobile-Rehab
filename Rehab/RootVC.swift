@@ -115,16 +115,16 @@ extension RootVC: OCKSymptomTrackerViewControllerDelegate {
         guard assessmentEvent.state == .initial || assessmentEvent.state == .notCompleted || (assessmentEvent.state == .completed && assessmentEvent.activity.resultResettable) else { return }
         
         //Show an 'ORKTaskViewController for the assessment's task
-        let taskViewController = ORKTaskViewController(task: sampleAssessment.task(), taskRunUUID: nil)
+        let taskViewController = ORKTaskViewController(task: sampleAssessment.task(), taskRun: nil)
         taskViewController.delegate = self
         
-        presentViewController(taskViewController, animated: true, completion: nil)
+        present(taskViewController, animated: true, completion: nil)
     }
 }
 
 extension RootVC: ORKTaskViewControllerDelegate {
     
-    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
+    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         dismiss(animated: true, completion: nil)
         
         defer {
@@ -173,11 +173,15 @@ extension RootVC: ORKTaskViewControllerDelegate {
                         return
                     }
                     
-                    healthStore.saveObject(sample, withCompletion: { success, _ in
+                    healthStore.save(sample, withCompletion: { success, _ in
                         if success {
                             /* The sample was saved to the HealthKit store. Use it to create an 'OCKCarePlanEventResult' and save that to the OCKCarePlanStore'.
                              */
-                            let healthKitAssociatedResult = OCKCarePlanEventResult(quantitySample: sample, quantityStringFormatter: nil, displayUnit: healthSampleBuilder.unit, displayUnitStringKey: healthSampleBuilder.localizedUnitForSample(sample), userInfo: nil)
+                            let healthKitAssociatedResult = OCKCarePlanEventResult(quantitySample: sample,
+                                                                                   quantityStringFormatter: nil,
+                                                                                   display: healthSampleBuilder.unit,
+                                                                                   displayUnitStringKey: healthSampleBuilder.localizedUnitForSample(sample),
+                                                                                   userInfo: nil)
                             
                             self.completeEvent(event, inStore: self.storeManager.store, withResult: healthKitAssociatedResult)
                         }

@@ -98,13 +98,15 @@ class BuildInsightsOperation: Operation {
             
             components.day = offset
             let dayDate = (calendar as NSCalendar).date(byAdding: components, to: startDate, options: [])!
-            let dayComponents = DateComponents(calendar: calendar, timeZone: dayDate)
+            
+            let dayComponents = calendar.dateComponents([.year, .month, .day, .era], from: dayDate)
+        
             
             let assessmentEventsForDay = assessmentEvents[dayComponents]
             if let adherence = percentageEventsCompleted(assessmentEventsForDay) , adherence > 0.0 {
                 let scaledAdeherence = adherence * 10.0
                 assessmentValues.append(scaledAdeherence)
-                assessmentLabels.append(percentageFormatter.string(from: NSNumber(adherence))!)
+                assessmentLabels.append(percentageFormatter.string(from: NSNumber(value: adherence))!)
             } else {
                 assessmentValues.append(0.0)
                 assessmentLabels.append(NSLocalizedString("N/A", comment: ""))
@@ -145,7 +147,8 @@ class BuildInsightsOperation: Operation {
         for offset in 0..<7 {
             components.day = offset
             let dayDate = (calendar as NSCalendar).date(byAdding: components, to: startDate, options: [])!
-            let dayComponents = DateComponents(calendar: calendar, timeZone: dayDate)
+            let dayComponents = calendar.dateComponents([.year, .month, .day, .era], from: dayDate)
+            
             let eventsForDay = surveyEvents[dayComponents]
             
             totalEventCount += eventsForDay.count
@@ -163,7 +166,7 @@ class BuildInsightsOperation: Operation {
         
         let percentageFormatter = NumberFormatter()
         percentageFormatter.numberStyle = .percent
-        let formattedAdherence = percentageFormatter.string(from: NSNumber(surveyAdherence))!
+        let formattedAdherence = percentageFormatter.string(from: NSNumber(value: surveyAdherence))!
         
         let insight = OCKMessageItem(title: "Survey Adherence", text: "Your survey adherence was \(formattedAdherence) last week.", tintColor: Colors.magenta.color, messageType: .tip)
         

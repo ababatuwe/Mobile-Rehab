@@ -32,6 +32,10 @@ struct TowerOfHanoi: Assessment {
     func task() -> ORKTask {
         let intendedUseDescription = "Memory Test"
         
-        return ORKOrderedTask.towerOfHanoiTaskWithIdentifier(activityType.rawValue, intendedUseDescription: intendedUseDescription, numberOfDisks: 7, options: ORKPredefinedTaskOption.None)
+        return ORKOrderedTask.towerOfHanoiTask(
+            withIdentifier: activityType.rawValue,
+            intendedUseDescription: intendedUseDescription,
+            numberOfDisks: 7,
+            options: .excludeLocation)
     }
 }

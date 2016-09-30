@@ -16,34 +16,34 @@ class SampleData: NSObject {
     
     let activities: [Activity] = [AerobicExercise(), LightExercise(), SCAT3(), SpatialMemory(), LightRun(), OrientationTask(), SCAT3_V2(), FitnessCheck()]
     
+    
+    let contact = [OCKContactInfo(type: OCKContactInfoType.phone, display: "613-520-2600", actionURL: nil)]
+    
     let contacts: [OCKContact] = [
+        
         OCKContact(contactType: .careTeam,
-            name: "Bruce Marshall",
-            relation: "Physiotherapist",
-            tintColor: Colors.blue.color,
-            phoneNumber: CNPhoneNumber(stringValue: "613-520-2600"),
-            messageNumber: CNPhoneNumber(stringValue: "613-520-2600"),
-            emailAddress: "bruce.marshall@carleton.ca",
-            monogram:"BM",
-            image: UIImage(named: "bruce-marshall") ),
+                   name: "Bruce Marshall",
+                   relation: "Physiotherapist",
+                   contactInfoItems: [OCKContactInfo(type: OCKContactInfoType.phone, display: "613-520-2600", actionURL: nil)],
+                   tintColor: Colors.blue.color,
+                   monogram: "BM",
+                   image: UIImage(named: "bruce-marshall")),
+        
         OCKContact(contactType: .careTeam,
-            name: "Nadine Smith",
-            relation: "Physiotherapist",
-            tintColor: Colors.blue.color,
-            phoneNumber: CNPhoneNumber(stringValue: "613-520-2600"),
-            messageNumber: CNPhoneNumber(stringValue: "613-520-2600"),
-            emailAddress: "nadine.smith@carleton.ca",
-            monogram:"NS",
-            image: UIImage(named: "Nadine")),
+                   name: "Nadine Smith",
+                   relation: "Physiotherapist",
+                   contactInfoItems: [OCKContactInfo(type: OCKContactInfoType.phone, display: "613-520-2600", actionURL: nil)],
+                   tintColor: Colors.blue.color,
+                   monogram: "NS",
+                   image: UIImage(named: "Nadine")),
+        
         OCKContact(contactType: .personal,
-            name: "Agaba Nkuuhe",
-            relation: "Brother",
-            tintColor: Colors.green.color,
-            phoneNumber: CNPhoneNumber(stringValue: "613-555-1111"),
-            messageNumber: CNPhoneNumber(stringValue: "613-555-1111"),
-            emailAddress: "agaba.nkuuhe@carleton.ca",
-            monogram: "AN",
-            image: UIImage(named:"me"))
+                   name: "Agaba Nkuuhe",
+                   relation: "Brother",
+                   contactInfoItems: [OCKContactInfo(type: OCKContactInfoType.phone, display: "613-298-2600", actionURL: nil)],
+                   tintColor: Colors.green.color,
+                   monogram: "AN",
+                   image: UIImage(named: "me"))
     ]
     
     
@@ -57,7 +57,7 @@ class SampleData: NSObject {
             
             carePlanStore.activity(forIdentifier: carePlanActivity.identifier) { (success, activityOrNil, errorOrNil) -> Void in
                 guard success else {
-                    fatalError("*** An error occurred \(errorOrNil?.debugDescription) ***")
+                    fatalError("*** An error occurred \(errorOrNil?.localizedDescription) ***")
                 }
                 
                 if let activity = activityOrNil {
@@ -65,7 +65,7 @@ class SampleData: NSObject {
                 } else {
                     carePlanStore.add(carePlanActivity){ success, error in
                         if !success {
-                            print(error?.debugDescription)
+                            print(error?.localizedDescription)
                         }
                     }
                 }
