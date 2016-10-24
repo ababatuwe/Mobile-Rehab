@@ -12,3 +12,7 @@ Goals of the project:
 2. Patients can get the support of their family, friends, advocates and other health professionals. The patient can decide who can access their information, view their progress, and communicate with each other.
 
 3. Patients can benefit from the services of a personal health coach who can provide the right support at the right time to help them adopt sustainable behavior change and achieve better health and wellness outcomes.
+
+IF THINGS BREAK:
+
+Download the latest <a href="https://github.com/ResearchKit/ResearchKit">ResearchKit</a> and <a href="">CareKit</a> frameworks and import them into the XCode project. 
